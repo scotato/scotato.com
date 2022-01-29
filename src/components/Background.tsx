@@ -24,4 +24,5 @@ const Container = styled("div", {
 const Wavy = styled(SVG, {
   position: "absolute",
   width: "100%",
+  height: "100%",
 });
