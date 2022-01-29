@@ -1,9 +1,11 @@
-import React from 'react'
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-import { getCssText } from '../stitches.config'
+import React from "react";
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import { getCssText, globalStyles } from "@app/theme";
 
 export default class Document extends NextDocument {
   render() {
+    globalStyles();
+
     return (
       <Html lang="en">
         <Head>
@@ -17,6 +19,6 @@ export default class Document extends NextDocument {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
